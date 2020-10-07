@@ -41,6 +41,7 @@ legend {
     text-align: center;
     color: black;
     font-family: sans-serif;
+    font-weight: lighter;
 }
 
 h1 {
@@ -76,38 +77,60 @@ p {
 }
 
 a {
-    position: absolute;
+
     text-align: center;
     text-decoration: none;
     color: black;
     margin-top: 20px;
     margin-left: 90px;
+    font-family: sans-serif;
+    font-weight: lighter;
 
 
 }
 
-button {
+.styled {
+    border: 0;
+    line-height: 2.0;
+    font-size: 1rem;
+    margin-left: 100px;
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
     background-color: #FF4263;
-    color: white;
-    border-radius: 20px;
-    text-decoration: none;
-    padding: 10px 40px;
-    display: block;
-    margin: 40px 100px;
-    border: none;
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+        inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+    background-color: #ee3b59ec;
 
 }
+
+.styled:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+        inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
+
 
 form {
     position: absolute;
     margin-top: 100px;
-    
+
 }
 
 #img2 {
     position: absolute;
     margin-top: 10px;
-    margin-left: 170px;
+    margin-left: 3px;
 
 
 }
@@ -115,7 +138,7 @@ form {
 #img1 {
     position: absolute;
     margin-top: 10px;
-    margin-left:110px;
+    margin-left: 3px;
 }
 
 input {
